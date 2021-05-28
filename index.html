@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Busca por Países</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="myHeader">
+      <div class="myLogo">
+        <img src="img/logo.png" onclick="changeDiv();" height="60" width="100">
+      </div>
+      <div class="headerRight">
+        <button class="btnVoltar" onclick="changeDiv();"><img src="img/Vector.png" alt=""><span
+            class="btnText"></span></button>
+      </div>
+    </div>
+  </header>
+  <div class="myContainer">
+    <div class="myContent">
+      <div class="page1">
+        <div class="mySearch">
+          <div class="divFirstSelect">
+            <label class="labelText">Filtrar por:</label><br>
+            <select class="mySelect" type="select" id="inputFirstSelect">
+              <option value="" selected disabled>Escolha uma opção</option>
+              <option value="region">Região</option>
+              <option value="capital">Capital</option>
+              <option value="lang">Língua</option>
+              <option value="name">País</option>
+              <option value="callingcode">Cod. Ligação</option>
+            </select>
+          </div>
+          <div class="divSeccondSelect">
+            <label class="labelText">Filtrar por:</label><br>
+            <select class="mySelect" type="select" id="inputSeccondSelect">
+              <option value="" selected disabled>Escolha uma opção</option>
+            </select>
+          </div>
+          <button type="button" id="btnFind" class="myBtnFind">Pesquisar
+          </button>
+        </div>
+        <div class="myCountries" id="countriesResult">
+          <!-- RESULTADOS SENDO CRIADOS PELO JAVASCRIPT -->
+        </div>
+      </div>
+      <div class="page2">
+        <div class="mySelectedCountry">
+          <div class="mySelectedFlag">
+            <img class="selectedFlagImg" id="imgSelected" src="img/loading.gif">
+          </div>
+          <div class="countrySelectedInformation">
+            <label class="informationText" id="countryName"></label>
+            <label class="informationText" id="countryCapital"></label>
+            <label class="informationText" id="countryRegion"></label>
+            <label class="informationText" id="countrySubRegion"></label>
+            <label class="informationText" id="countryPopulation"></label>
+            <label class="informationText" id="countryLang"></label>
+          </div>
+        </div>
+        <div class="borderCountries">
+          <div class="borderText">Países vizinhos:</div>
+          <div class="borderFlags" id="borderFlags">
+            <!-- dados paises vizinhos tambem vindo pelo arquivo js -->
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <footer class="myFooter">
+    <div class="footerItem">
+      < </div>
+        <div class="footerItem">1</div>
+        <div class="footerItem">2</div>
+        <div class="footerItem">3</div>
+        <div class="footerItem">></div>
+  </footer>
+  <script src="js/script.js"></script>
+  <script src="js/languages.js"></script>
+</body>
+
+</html>
